@@ -12,7 +12,7 @@ public class EditActivity extends Traceur {
         setContentView(R.layout.activity_edit);
     }
 
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+    /* protected void onRestoreInstanceState(Bundle savedInstanceState) {
         EditText text = (EditText) findViewById(R.id.editText);
         text.setText(savedInstanceState.getString("text"));
     }
@@ -20,5 +20,5 @@ public class EditActivity extends Traceur {
     protected void onSaveInstanceState(Bundle outState) {
         EditText text = (EditText) findViewById(R.id.editText);
         outState.putString("text", text.getText().toString() + " saved");
-    }
+    } //*/
 }
