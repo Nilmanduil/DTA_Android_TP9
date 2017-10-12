@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android_TP9</string>
+    <string name="nextActivity">Deuxième activité</string>
+</resources>
