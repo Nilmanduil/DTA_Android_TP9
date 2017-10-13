@@ -1,0 +1,23 @@
+# Le but de ce TP 9 est d'afficher une log à chaque moment du cycle de vie d'une application.
+# 1 heure
+
+L'application doit contenir deux Activités :
+	- Une première qui contient un bouton permettant de passer à la seconde Activité.
+	- Une deuxième activité qui affiche un EditText
+
+Utiliser le LinearLayout
+
+1 - Créer un classe abstraite Traceur qui étendra Activity. Dans cette classe, redéfinir toutes les méthodes du cycle de vie d'une application Android. Chaque méthode doit afficher une log dès qu'elle est appelée.
+2 - Les deux activités de votre programme hétitent de la classe Traceur.
+
+Si vous insérez un texte dans votre EditText, le texte disparait lors de la rotation.
+
+3 - Utiliser le système des bundles pour stocker le texte de l'EditText et le restaurer lors de la rotation.
+
+    protected void onRestoreInstanceState(Bundle savedInstanceState);
+    protected void onSaveInstanceState(Bundle outState);
+
+4 - Une autre méthode existe :
+	- https://seasonofcode.com/posts/prevent-android-app-from-restarting-on-rotate-hardware-keyboard-state-change.html
+
+	Mettre en place cette méthode
